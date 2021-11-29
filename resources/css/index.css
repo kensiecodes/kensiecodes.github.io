@@ -1,0 +1,53 @@
+
+        body {
+        background-color: rgb(116, 195, 191);
+    }
+        h2 {
+        font-family: Montserrat;
+        font-size: 29px;
+        color: rgb(242, 242, 242);
+    }
+
+        h1 {
+        font-family: Montserrat, Georgia;
+        font-size: 35px;
+        color: rgb(242, 242, 242);
+        }
+
+        h3 {
+            color: rgb(242, 242, 242);
+            font-family: Montserrat, Georgia;
+        }
+
+        h4 {
+
+            font-family: Lato, Georgia, serif;
+            color: rgb(242, 242, 242);
+        }
+
+        p {
+            font-family: Lato, Georgia, serif;
+            color: rgb(242, 242, 242);
+            
+        }
+        
+        form {
+            font-family: Lato, Georgia, serif;
+            
+        }
+
+        input {
+            text-align: center;
+        }
+        input[type="submit"] {
+            padding:5px 15px; 
+            background:rgb(54, 166, 145); 
+            border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; 
+            color: rgb(242, 242, 242);
+        }
+
+        
+    
