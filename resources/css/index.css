@@ -1,53 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-        body {
-        background-color: rgb(116, 195, 191);
-    }
-        h2 {
-        font-family: Montserrat;
-        font-size: 29px;
-        color: rgb(242, 242, 242);
-    }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-        h1 {
-        font-family: Montserrat, Georgia;
-        font-size: 35px;
-        color: rgb(242, 242, 242);
-        }
+/* colour palette
+    BROWN #5a2a27
+    FOREST GREEN #1A281F
+    TEA GREEN #BFD7B5
+    OPAL BLUE #A3C4BC
+    GREY-WHITE rgb(244,244,244)
+    CREAM-WHITE rgb(255,249,243)
+*/
 
-        h3 {
-            color: rgb(242, 242, 242);
-            font-family: Montserrat, Georgia;
-        }
+@media (max-width: 500px) {
+  main {
+    display: initial;
+  }
+}
 
-        h4 {
+body {
+  color: #5a2a27;
+  background-color: rgb(255, 249, 243);
+}
 
-            font-family: Lato, Georgia, serif;
-            color: rgb(242, 242, 242);
-        }
+h1 {
+  font-family: Lora, serif;
+  font-size: 3em;
+}
 
-        p {
-            font-family: Lato, Georgia, serif;
-            color: rgb(242, 242, 242);
-            
-        }
-        
-        form {
-            font-family: Lato, Georgia, serif;
-            
-        }
+h2 {
+  font-family: Lora, serif;
+  font-size: 2em;
+}
 
-        input {
-            text-align: center;
-        }
-        input[type="submit"] {
-            padding:5px 15px; 
-            background:rgb(54, 166, 145); 
-            border:0 none;
-            cursor:pointer;
-            -webkit-border-radius: 5px;
-            border-radius: 5px; 
-            color: rgb(242, 242, 242);
-        }
+p {
+  color: #bfd7b5;
+}
 
-        
-    
+.box1 {
+  background: #f0cfc6;
+}
+
+.nav {
+  color: #f2e6d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #bfd7b5;
+  padding: 3px;
+}
+
+.linkcontainer {
+  background: #1a281f;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.3rem 0.3rem 0.3rem #aaa;
+  border-radius: 0.5rem;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5vw;
+  padding: 0px 0px;
+  flex-shrink: inherit;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.nametag {
+  padding: 10px 0;
+  border: 3px solid #5a2a27;
+  border-width: 3px 0;
+}
+
+.box4 {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+.box5 {
+  background: #f0cfc6;
+}
+.box6 {
+  background: #c5e2d1;
+}
+
+.box7 {
+  background: #f2e6d5;
+}
+
+main {
+  display: grid;
+  height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px 20px;
+  padding: 5% 15%;
+}
+
+.box1 {
+  grid-column: 1 / 3;
+}
+
+.nav {
+  grid-column: 3 /5;
+  grid-row: 1;
+}
+
+.box3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.box5 {
+  grid-row: 3/5;
+  grid-column: 1 / 3;
+}
+
+.box6 {
+  grid-row: 2/5;
+  grid-column: 4/5;
+}
+
+.box7 {
+  grid-column: 3/4;
+  grid-row: 3/5;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: inline;
+  }
+  body {
+    padding: 5%;
+  }
+  div {
+    padding: 10px 0;
+  }
+}
